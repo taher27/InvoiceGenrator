@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style> button {
+                padding: 12px 50px;
+                border: none;
+                background-color: rgb(91,234,208);
+                color: #333;
+                cursor: pointer;
+                display: inline-block;
+               }
+              
+            </style>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" 
+        integrity="sha256-DupmmuWppxPjtcG83ndhh/32A9xDMRFYkGOVzvpfSIk=" 
+        crossorigin="anonymous"> </script>
+        
+    </head>
+
+    <body>
+        <h1> Taher </h1>
+        <button> Print </button>
+
+        <script>
+        
+        const pdf = new jsPDF();
+        let button = document.querySelector('button');
+        button.addEventListener('click', printPDF);
+
+        function printPDF() 
+        {
+            var markup = document.documentElement.innerHTML;
+            alert(markup);
+            // pdf.text(10, 10, 'Its printing');
+            // pdf.save();
+        }
+
+        </script>
+    </body>
+</html>
