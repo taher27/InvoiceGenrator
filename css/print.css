@@ -2,3 +2,13 @@
 .delete {
   display: none;
 }
+
+.addCustomer{
+  border: none;
+  outline: none;
+  background: white;
+  color: #000;
+  font-size: 12px;
+  border-radius: 20px;
+  text-decoration: none;
+}

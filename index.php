@@ -10,16 +10,6 @@
 	<link rel='stylesheet' type='text/css' href='css/print.css' media="print" />
 	<script type='text/javascript' src='js/jquery-1.3.2.min.js'></script>
 	<script type='text/javascript' src='js/example.js'></script>
-<script>
-
-		$(document).ready(function(){
-			var newimg = document.getElementById('image');
-			$("#save-logo").click(function(){
-				$("#image").attr("src", newimg);
-			});
-		});
-</script>
-
 
 </head>
 
@@ -34,6 +24,7 @@
 		<textarea id="address" style="padding:10px;">
 Customer Details
 		</textarea>
+		<a href="register.php" class="addCustomer"> Add Customer </a>
 
 		</div>
 		
